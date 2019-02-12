@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <h1>Welcome!</h1>
+
+    <ion-list>
+        <ion-item *ngFor="let pessoa of pessoa">
+          <ion-avatar item-start>
+              <img src={{pessoa.img}}/>
+          </ion-avatar>
+          <h3>{{pessoa.nome}}</h3>
+          <h5>{{pessoa.email}}</h5>
+          <h5>{{pessoa.curso}}</h5>
+        </ion-item>
+      </ion-list>
+
+</ion-content>
